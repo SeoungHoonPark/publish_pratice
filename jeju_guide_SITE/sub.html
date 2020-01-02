@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>제주로컬푸드</title>
+    <link rel="stylesheet" href="resource/css/common_jeju.css">
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/slick.js"></script><!-- 20190104 추가 -->
+    <script src="resource/js/jquery.bpopup.min.js"></script>
+    <script src="resource/js/common.js"></script>
+  </head>
+
+  <body>
+    <!-- 스킵네비게이션 -->
+    <ul id="skip-navi">
+      <li><a href="#content">본문 바로가기</a></li>
+    </ul>
+
+    <div id="wrap">
+
+      <div id="container">
+
+        <!-- GNB -->
+        <div id="header">
+          <div class="header_menu">
+            <div class="logo"><a href="#none"><img src="resource/img/common/logo.png" alt="제주로컬푸드" /></a></div>
+            <div class="util_menu">
+              <ul>
+	            <li class="btn_guide"><a href="#none" target="_self"><img src="resource/img/common/btn_guide.png" alt="상단배너" /></a></li><!-- 20190104 추가 -->
+                <li class="name"><a href="#none">제주로컬푸드</a></li>
+                <li><a href="#none">정보수정</a></li>
+                <li><a href="#none">로그아웃</a></li>
+              </ul>
+            </div>
+            <!-- // util_menu -->
+          </div>
+          <!-- // header_menu -->
+
+          <div id="gnb" class="sub_gnb">
+            <div class="gnb_wrap">
+              <!-- 서브페이지 GNB에 id="sub_category" 추가 -->
+              <div class="gnb_category" id="sub_category">
+                <p class="sub_btn_category"><a href="#none">CATEGORY</a></p>
+                <ul class="category_depth1" style="display: none">
+                  <li>
+                    <p><a href="#none">농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">건농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">과수</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">곡류</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">가공식품</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">특산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- // gnb_category -->
+              <div class="gnb_main">
+                  <div class="gnb_menu">
+                    <ul class="gnb_depth1">
+                      <li><a href="#none">제주형 로컬푸드</a></li>
+                      <li><a href="productList.html">상품주문</a></li>
+                      <li><a href="placeList.html">발주내역</a></li>
+                      <li><a href="noticeList.html">공지사항</a></li>
+                      <li><a href="inquiryList.html">1:1 문의</a></li>
+                    </ul>
+                    <!-- // gnb_depth1 -->
+                  </div>
+                  <!-- // gnb_menu -->
+
+                  <div class="gnb_depth2" style="display: none">
+                    <div class="gnb_depth2_ul">
+                      <ul>
+                        <li><a href="#none">제주형로컬푸드 소개</a></li>
+                        <li><a href="#none">주문판매 사용방법</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="productList.html">상품목록</a></li>
+                        <li><a href="orderWrite01.html">주문서 작성</a></li>
+                        <li><a href="orderList.html">주문내역</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="placeList.html">발주내역</a></li>
+                      </ul>
+					  <ul>
+						<li><a href="noticeList.html">공지사항</a></li>
+					  </ul>
+                      <ul>
+                        <li><a href="inquiryList.html">1:1 문의</a></li>
+                      </ul>
+                    </div>
+                    <!-- // gnb_depth2_ul -->
+                  </div>
+                  <!-- // gnb_depth2 -->
+              </div>
+              <!-- // gnb_menu -->
+            </div>
+            <!-- // gnb_wrap -->
+          </div>
+          <!-- // gnb -->
+        </div>
+        <!-- // header -->
+      </div>
+      <!-- // container -->
+
+      <div id="sub_wrap">
+        <div class="lnb">
+          <ul>
+            <li class="depth_1">상품주문</li>
+            <li><a class="on" href="#none">상품목록</a></li>
+            <li><a href="#none">주문서 작성</a></li>
+            <li><a href="#none">주문내역</a></li>
+          </ul>
+          <div class="sub_banner_lnb"><a href="#none"><img src="resource/img/main_banner_lnb.jpg" alt="상담시간" /></a></div>
+        </div>
+        <!-- // lnb -->
+        <div class="sub_contents">
+          <div class="breadcrumb">
+            <p class="depth2_title">상품목록<span>제주로컬푸드 상품목록입니다. 원하는 품목을 클릭하면 주문할 수 있습니다.</span></p>
+            <div class="depth_select">
+              <ul>
+                <li class="icon_home">Home</li>
+                <li>
+                  <form>
+                    <select>
+                     <option value="">상품주문</option>
+                     <option value="">선택</option>
+                     <option value="">선택</option>
+                     <option value="">선택</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- // breadcrumb -->
+        </div>
+        <!-- // sub_contents -->
+      </div>
+      <!-- // sub_wrap -->
+
+      <div class="dim-menu-m"></div>	
+
+      <!-- ======레이어팝업(주문정보)====== -->
+      <div id="layer_popup" style="display: none;">
+        <div class="popupContent">
+      		<div class="title_wrap">
+            <p class="title">주문정보</p>
+            <p class="b-close">종료</p>
+          </div>
+          <div class="popup_form">
+
+            <!-- 선택품목 -->
+            <h2 class="h2_title">선택품목</h2>
+            <table class="form_table">
+							<caption>선택품목(표) 입니다. 이 표는 제품의 품목, 단위, 생산지, 기타, 단가에 대한 정보를 확인, 단위을 선택할 수 있습니다.</caption>
+							<colgroup>
+								<col width="192px" />
+								<col width="311px" />
+							</colgroup>
+							<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">구분</th>
+							</tr>
+							</thead>
+							<tbody>
+  							<tr>
+  								<td>품목</td>
+  								<td>당근</td>
+  							</tr>
+                <tr>
+  								<td>단위<span class="icon_star">*</span></td>
+  								<td>
+                    <form onsubmit="return goUrl(this)" target="_blank">
+                      <select name="url">
+                       <option value="">단위선택</option>
+                       <option value="">선택</option>
+                       <option value="">선택</option>
+                       <option value="">선택</option>
+                      </select>
+                    </form>
+                  </td>
+                  <tr>
+    								<td>생산자</td>
+    								<td>국내산</td>
+    							</tr>
+                  <tr>
+                    <td>기타</td>
+                    <td>GAP</td>
+                  </tr>
+                  <tr>
+                    <td class="color_red">단가 [ (1KG) 기준 ]</td>
+                    <td>(4,500원)</td>
+                  </tr>
+  							</tr>
+  						</tbody>
+  					</table>
+            <!-- //선택품목 -->
+
+            <!-- 납품가능기간 -->
+            <h2 class="h2_title">납품가능기간</h2>
+            <div class="date_text">
+              <p class="color_red">2018.10.17 ~ 2018.11.05 (20일)</p>
+            </div>
+            <!-- // 납품가능기간 -->
+
+            <!-- 수령 일자선택 -->
+            <h2 class="h2_title">수령 일자선택</h2>
+            <div class="date_text">
+              <p>시작일<span class="icon_star">*</span> ~ 종료일<span class="icon_star">*</span></p>
+            </div>
+            <!-- // 수령 일자선택 -->
+
+            <!-- 수량선택 -->
+            <h2 class="h2_title">수량선택</h2>
+            <table class="form_table">
+							<caption>수량선택(표) 입니다. 이 표는 선택일자기준으로 수량을 입력하는 폼입니다.</caption>
+							<colgroup>
+								<col width="192px" />
+								<col width="311px" />
+							</colgroup>
+							<thead>
+							<tr>
+								<th scope="col">선택일자</th>
+								<th scope="col">수량입력</th>
+							</tr>
+							</thead>
+							<tbody>
+  							<tr>
+  								<td class="font_normal">2018.08.10(월)</td>
+  								<td><label for="ea">수량입력</label><input type="text" id="ea" name="ea" /></td>
+  							</tr>
+                <tr>
+  								<td class="font_normal">2018.08.10(월)</td>
+  								<td><label for="ea">수량입력</label><input type="text" id="ea" name="ea" /></td>
+  							</tr>
+  						</tbody>
+  					</table>
+            <!-- //수량선택 -->
+
+            <!-- 수량선택 -->
+            <h2 class="h2_title">수량선택</h2>
+            <table class="form_table">
+							<caption>수량선택(표) 입니다. 이 표는 총 수량, 금액(단가 x 수량)을 보여집니다.</caption>
+							<colgroup>
+								<col width="192px" />
+								<col width="311px" />
+							</colgroup>
+							<thead>
+							<tr>
+								<th scope="col">총 수량</th>
+								<th scope="col">금액&nbsp;(단가 x 수량)</th>
+							</tr>
+							</thead>
+							<tbody>
+  							<tr>
+  								<td class="font_normal">6</td>
+  								<td class="font_normal">27,000원</td>
+  							</tr>
+                <tr>
+  								<td class="font_normal">6</td>
+  								<td class="font_normal">27,000원</td>
+  							</tr>
+  						</tbody>
+  					</table>
+            <!-- //수량선택 -->
+
+          </div>
+      	</div>
+        <!-- // popupContent -->
+        <div class="btn_order_ul">
+          <ul>
+            <li class="btn_add"><button>주문추가 후 신규품목 추가 +</button></li>
+            <li class="btn_order"><button>바로주문</button></li>
+          </ul>
+        </div>
+        <!-- // btn_order_ul -->
+      </div>
+      <!-- // layer_popup -->
+      <!-- ======레이어팝업(주문정보)====== -->
+
+      <!-- ======레이어팝업(주문정보확인)====== -->
+      <div id="layer_popup" style="display: none;">
+        <div class="popupContent">
+      		<div class="title_wrap">
+            <p class="title">주문정보</p>
+            <p class="b-close">종료</p>
+          </div>
+          <div class="popup_form">
+
+            <!-- 납품가능기간 -->
+            <h2 class="h2_title">납품가능기간</h2>
+            <div class="date_text">
+              <p class="color_red">2018.10.17 ~ 2018.11.05 (20일)</p>
+            </div>
+            <!-- // 납품가능기간 -->
+
+            <!-- 상품/배송정보 -->
+            <h2 class="h2_title">상품/배송정보</h2>
+            <div class="product_info">
+              <div class="product_img"><img src="resource/img/common/img_food_01.jpg" alt="" /></div>
+              <ul class="product_ui">
+                <li class="product_name">완숙토마토 2kg</li>
+                <li class="txt_L"><span>금&nbsp;&nbsp;&nbsp;액</span>7,000원</li>
+                <li class="txt_L"><span>생산지</span>국내산</li>
+                <li class="txt_L"><span>기&nbsp;&nbsp;&nbsp;타</span>무농약</li>
+              </ul>
+              <p class="efficacy">
+                맛과 당도가 뛰어나며 베타카토린이 성분이 함유된 당근
+                흙을 털지 않고 신문지에 싸서 오랫동안 보관하여 섭취
+                샐러드, 주스, 볶음 등 다양한 요리의 재료로 활용 가능
+              </p>
+            </div>
+            <!-- // 상품/배송정보 -->
+
+            <!-- 농가정보 -->
+            <h2 class="h2_title">농가정보</h2>
+            <div class="date_text">
+              <p>제주지역 6개 농가가 참여하고 있습니다. </p>
+            </div>
+            <!-- // 농가정보 -->
+
+          </div>
+      	</div>
+        <!-- // popupContent -->
+        <div class="btn_order_ul">
+          <ul>
+            <li class="btn_confirm"><button>주문진행</button></li>
+          </ul>
+        </div>
+        <!-- // btn_order_ul -->
+      </div>
+      <!-- // layer_popup -->
+      <!-- ======레이어팝업(주문정보확인)====== -->
+
+      <div id="footer">
+        <div class="copyright">
+          <ul>
+            <li class="jeju_logo"><img src="resource/img/common/logo_jeju.png" alt="제주사회적경제지원센터JEJU SOCIAL ECONOMY CENTER" /></li>
+            <li>
+              상호명 : 제주사회적경제지원센터 | 대표 : 아무개 | 메일 : <a href="mailto:jeju@jeju.com">jeju@jeju.com</a> | 전화 : 064-0000-0000 | 사업자등록번호 : 000-00-0000<br />
+              주소 : 제주측별자치도 제주시 중앙로 165, 1층(이도1동) | Copyright © 2018 제주사회적경제지원센터. ALL RIGHTS RESERVED.
+            </li>
+          </ul>
+        </div>
+        <!-- // copyright -->
+      </div>
+      <!-- // footer -->
+
+    </div>
+    <!-- // wrap -->
+
+  </body>
+</html>

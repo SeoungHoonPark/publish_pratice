@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>제주로컬푸드</title>
+    <link rel="stylesheet" href="resource/css/common_jeju.css">
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/slick.js"></script><!-- 20190104 추가 -->
+    <script src="resource/js/jquery.bpopup.min.js"></script>
+    <script src="resource/js/common.js"></script>
+  </head>
+
+  <body>
+    <!-- 스킵네비게이션 -->
+    <ul id="skip-navi">
+      <li><a href="#content">본문 바로가기</a></li>
+    </ul>
+
+    <div id="wrap">
+
+      <div id="container">
+
+        <!-- GNB -->
+        <div id="header">
+          <div class="header_menu">
+            <div class="logo"><a href="#none"><img src="resource/img/common/logo.png" alt="제주로컬푸드" /></a></div>
+            <div class="util_menu">
+              <ul>
+	            <li class="btn_guide"><a href="#none" target="_self"><img src="resource/img/common/btn_guide.png" alt="상단배너" /></a></li><!-- 20190104 추가 -->
+                <li class="name"><a href="#none">제주로컬푸드</a></li>
+                <li><a href="#none">정보수정</a></li>
+                <li><a href="#none">로그아웃</a></li>
+              </ul>
+            </div>
+            <!-- // util_menu -->
+          </div>
+          <!-- // header_menu -->
+
+          <div id="gnb" class="sub_gnb">
+            <div class="gnb_wrap"> 
+			  <!-- 서브페이지 GNB에 id="sub_category" 추가 -->
+              <div class="gnb_category" id="sub_category">
+                <p class="sub_btn_category"><a href="#none">CATEGORY</a></p>
+                <ul class="category_depth1" style="display: none">
+                  <li>
+                    <p><a href="#none">농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">건농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">과수</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">곡류</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">가공식품</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">특산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- // gnb_category -->
+			  <div class="gnb_main">
+                  <div class="gnb_menu">
+                    <ul class="gnb_depth1">
+                      <li><a href="#none">제주형 로컬푸드</a></li>
+                      <li><a href="productList.html">상품주문</a></li>
+                      <li><a href="placeList.html">발주내역</a></li>
+                      <li><a href="noticeList.html">공지사항</a></li>
+                      <li><a href="inquiryList.html">1:1 문의</a></li>
+                    </ul>
+                    <!-- // gnb_depth1 -->
+                  </div>
+                  <!-- // gnb_menu -->
+
+                  <div class="gnb_depth2" style="display: none">
+                    <div class="gnb_depth2_ul">
+                      <ul>
+                        <li><a href="#none">제주형로컬푸드 소개</a></li>
+                        <li><a href="#none">주문판매 사용방법</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="productList.html">상품목록</a></li>
+                        <li><a href="orderWrite01.html">주문서 작성</a></li>
+                        <li><a href="orderList.html">주문내역</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="placeList.html">발주내역</a></li>
+                      </ul>
+					  <ul>
+						<li><a href="noticeList.html">공지사항</a></li>
+					  </ul>
+                      <ul>
+                        <li><a href="inquiryList.html">1:1 문의</a></li>
+                      </ul>
+                    </div>
+                    <!-- // gnb_depth2_ul -->
+                  </div>
+                  <!-- // gnb_depth2 -->
+              </div>
+              <!-- // gnb_menu -->
+            </div>
+            <!-- // gnb_wrap -->
+          </div>
+          <!-- // gnb -->
+        </div>
+        <!-- // header -->
+      </div>
+      <!-- // container -->
+
+      <div id="sub_wrap">
+        <div class="lnb">
+          <ul>
+            <li class="depth_1">1:1 문의</li>
+            <li><a href="#none">문의내역</a></li>
+            <li><a class="on" href="#none">문의하기</a></li>
+          </ul>
+          <div class="sub_banner_lnb"><a href="#none"><img src="resource/img/main_banner_lnb.jpg" alt="상담시간" /></a></div>
+        </div>
+        <!-- // lnb -->
+        <div class="sub_contents">
+          <div class="breadcrumb">
+            <p class="depth2_title">1:1 문의<span>제주로컬푸드 주문판매 관련 1:1 문의를 할 수 있습니다.</span></p>
+            <div class="depth_select">
+              <ul>
+                <li class="icon_home">Home</li>
+                <li>
+                  <form>
+                    <select>
+						<option value="">1:1 문의</option>
+						<option value="">선택</option>
+						<option value="">선택</option>
+						<option value="">선택</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- // breadcrumb -->
+		  <div class="write inquiry">
+			<h2>1:1 문의 등록</h2>
+			<p class="infoTxt"><span class="star">*</span>필수사항</p>
+			<table class="table_list">
+				<caption>1:1 문의 등록 (표) 입니다. 이 표는 제목, 작성자, 연락처, 문의내용, 첨부파일에 대한 정보를 확인할 수 있습니다.</caption>
+				<colgroup>
+					<col style="width:15%;">
+					<col style="width:35%;">
+					<col style="width:15%;">
+					<col style="width:35%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col"><label for="">제목</label><span class="star">*</span></th>
+						<td colspan="3"><input type="text" id="" class="cont_tit" name="" title="제목 입력"></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="col">작성자</th>
+						<td>행복ICT, 김종현(happyict)</td>
+						<th><label for="">연락처</label></th>
+						<td>
+							<select class="phone" id="" name="">
+								<option value="">010</option>
+								<option value="">선택</option>
+								<option value="">선택</option>
+								<option value="">선택</option>
+							</select>
+							<span class="dash">-</span>
+							<input type="text" maxlength="4" id="" name="" class="cont_phone" value="">
+							<span class="dash">-</span>
+							<input type="text" maxlength="4" id="" name="" class="cont_phone" value="">
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">문의내용</label><span class="star">*</span></th>
+						<td colspan="3"><textarea name="" id="" class="cont_inquiry" cols="30" rows="10" placeholder="(1000자 이내로 입력 바랍니다.)"></textarea></td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">파일첨부</label></th>
+							<td colspan="3">
+								<div class="file_input_box">
+									<button class="file_input_btn" type="button" alt="file open"><img src="resource/img/common/btn_file.png" alt="파일선택"></button>
+									<input type="file" name="" id="" class="input_file_hidden">
+								</div>
+								<span class="file">이미지 파일(hwp, word, excel, pdf, ppt gif, png, jpg)을 기준으로 최대 10MB 이하,  최대 3개까지 첨부 가능합니다.</span>
+								<ul class="list-file">
+									<li>
+										<a href="" title="" class="name">파일이름.jpg</a>
+										<a href="" class="btn- delete"><span class="blind">파일 삭제</span></a>
+									</li>
+									<li>
+										<a href="" title="" class="name">파일이름.jpg</a>
+										<a href="" class="btn- delete"><span class="blind">파일 삭제</span></a>
+									</li>
+									<li>
+										<a href="" title="" class="name">파일이름.jpg</a>
+										<a href="" class="btn- delete"><span class="blind">파일 삭제</span></a>
+									</li>
+								</ul>			
+							</td>
+						</tr>
+				</tbody>
+			</table>
+
+			<div class="btn_both">
+				<button type="button" onclick="">문의등록하기</button>
+				<button type="button" onclick="">문의취소</button>
+			</div>
+
+		  </div>
+        </div>
+        <!-- // sub_contents -->
+      </div>
+      <!-- // sub_wrap -->
+
+	  <div class="dim-menu-m"></div>
+
+      <div id="footer">
+        <div class="copyright">
+          <ul>
+            <li class="jeju_logo"><img src="resource/img/common/logo_jeju.png" alt="제주사회적경제지원센터JEJU SOCIAL ECONOMY CENTER" /></li>
+            <li>
+              상호명 : 제주사회적경제지원센터 | 대표 : 아무개 | 메일 : <a href="mailto:jeju@jeju.com">jeju@jeju.com</a> | 전화 : 064-0000-0000 | 사업자등록번호 : 000-00-0000<br />
+              주소 : 제주측별자치도 제주시 중앙로 165, 1층(이도1동) | Copyright © 2018 제주사회적경제지원센터. ALL RIGHTS RESERVED.
+            </li>
+          </ul>
+        </div>
+        <!-- // copyright -->
+      </div>
+      <!-- // footer -->
+
+    </div>
+    <!-- // wrap -->
+
+  </body>
+</html>

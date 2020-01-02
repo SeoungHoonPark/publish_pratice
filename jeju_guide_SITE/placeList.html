@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>제주로컬푸드</title>
+    <link rel="stylesheet" href="resource/css/common_jeju.css">
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/slick.js"></script><!-- 20190104 추가 -->
+    <script src="resource/js/jquery.bpopup.min.js"></script>
+    <script src="resource/js/common.js"></script>
+  </head>
+
+  <body>
+    <!-- 스킵네비게이션 -->
+    <ul id="skip-navi">
+      <li><a href="#content">본문 바로가기</a></li>
+    </ul>
+
+    <div id="wrap">
+
+      <div id="container">
+
+        <!-- GNB -->
+        <div id="header">
+          <div class="header_menu">
+            <div class="logo"><a href="#none"><img src="resource/img/common/logo.png" alt="제주로컬푸드" /></a></div>
+            <div class="util_menu">
+              <ul>
+	            <li class="btn_guide"><a href="#none" target="_self"><img src="resource/img/common/btn_guide.png" alt="상단배너" /></a></li><!-- 20190104 추가 -->
+                <li class="name"><a href="#none">제주로컬푸드</a></li>
+                <li><a href="#none">정보수정</a></li>
+                <li><a href="#none">로그아웃</a></li>
+              </ul>
+            </div>
+            <!-- // util_menu -->
+          </div>
+          <!-- // header_menu -->
+
+          <div id="gnb" class="sub_gnb">
+            <div class="gnb_wrap">
+			  <!-- 서브페이지 GNB에 id="sub_category" 추가 -->
+              <div class="gnb_category" id="sub_category">
+                <p class="sub_btn_category"><a href="#none">CATEGORY</a></p>
+                <ul class="category_depth1" style="display: none">
+                  <li>
+                    <p><a href="#none">농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">건농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">과수</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">곡류</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">가공식품</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">특산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- // gnb_category -->
+             
+			  <div class="gnb_main">
+                  <div class="gnb_menu">
+                    <ul class="gnb_depth1">
+                      <li><a href="#none">제주형 로컬푸드</a></li>
+                      <li><a href="productList.html">상품주문</a></li>
+                      <li><a href="placeList.html">발주내역</a></li>
+                      <li><a href="noticeList.html">공지사항</a></li>
+                      <li><a href="inquiryList.html">1:1 문의</a></li>
+                    </ul>
+                    <!-- // gnb_depth1 -->
+                  </div>
+                  <!-- // gnb_menu -->
+
+                  <div class="gnb_depth2" style="display: none">
+                    <div class="gnb_depth2_ul">
+                      <ul>
+                        <li><a href="#none">제주형로컬푸드 소개</a></li>
+                        <li><a href="#none">주문판매 사용방법</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="productList.html">상품목록</a></li>
+                        <li><a href="orderWrite01.html">주문서 작성</a></li>
+                        <li><a href="orderList.html">주문내역</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="placeList.html">발주내역</a></li>
+                      </ul>
+					  <ul>
+						<li><a href="noticeList.html">공지사항</a></li>
+					  </ul>
+                      <ul>
+                        <li><a href="inquiryList.html">1:1 문의</a></li>
+                      </ul>
+                    </div>
+                    <!-- // gnb_depth2_ul -->
+                  </div>
+                  <!-- // gnb_depth2 -->
+              </div>
+              <!-- // gnb_menu -->
+            </div>
+            <!-- // gnb_wrap -->
+          </div>
+          <!-- // gnb -->
+        </div>
+        <!-- // header -->
+      </div>
+      <!-- // container -->
+
+      <div id="sub_wrap">
+        <div class="lnb">
+          <ul>
+            <li class="depth_1">발주내역</li>
+            <li><a class="on" href="#none">발주내역</a></li>
+          </ul>
+          <div class="sub_banner_lnb"><a href="#none"><img src="resource/img/main_banner_lnb.jpg" alt="상담시간" /></a></div>
+        </div>
+        <!-- // lnb -->
+        <div class="sub_contents">
+          <div class="breadcrumb">
+            <p class="depth2_title">발주내역<span>발주내역 및 진행상황을 확인하거나, 발주취소를 할 수 있습니다.</span></p>
+            <div class="depth_select">
+              <ul>
+                <li class="icon_home">Home</li>
+                <li>
+                  <form>
+                    <select>
+                     <option value="">발주내역</option>
+                     <option value="">선택</option>
+                     <option value="">선택</option>
+                     <option value="">선택</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- // breadcrumb -->
+
+		  <div class="boardList order place">
+			
+			<ul class="ext">
+				<li>발주 취소는 발주 상태가 ‘발주요청’인 경우 가능하며, ‘상품확인중’ 부터는 주문한 상품에 대한 농가배정이 완료되어 취소가 불가합니다.</li>
+				<li>발주내역 상세페이지에서 주문복사하기를 클릭하면, 발주 완료된 주문내역의 복사가 가능합니다.</li>
+				<li>기간별 상품 수령 후 발주내역 상세페이지에서 구매확정을 해주시면 최종 배송완료 처리됩니다.</li>
+				<li>추가적인 문의는 1:1문의를 이용해 주시기 바랍니다.</li>
+			</ul>
+			
+			<div class="searchWrap">
+				<div class="top">
+					<h2>발주내역 목록</h2>
+					<button type="submit" onclick="" class="searchBtn" title="조회">조회</button>
+				</div>
+				<div class="btm">
+					<ul>
+						<li>
+							<label for="">기간</label>
+							<div class="depth_select large">
+								<select name="period" id="" title="기간 구분">
+									<option value="">주문일자</option>
+									<option value="">수령일자</option>
+								</select>
+							</div>
+							<div class="cell">
+								<input type="text" class="date start_date" id="datepicker1" title="시작기간 입력">
+								<span class="dash">~</span>
+								<input type="text" class="date end_date" id="datepicker2" title="종료기간 입력">
+
+								<link rel="stylesheet" href="resource/css/jquery-date-ui.css" type="text/css" />   
+							    <script src="resource/js/jquery-date.min.js"></script>
+							
+								<script type="text/javascript">
+									$(function() {
+										
+										// datepicker default setting
+											  $.datepicker.setDefaults({
+												dateFormat: 'yy-mm',
+												prevText: '이전 달',
+												nextText: '다음 달',
+												monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+												monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+												dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+												dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+												dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+												showMonthAfterYear: true,
+												yearSuffix: '년'
+											  });
+										
+										$('#datepicker1').datepicker({
+											dateFormat:'yy-mm-dd'	//날짜형식
+											,showOn: 'button'		//버튼보이기
+											,buttonImageOnly: true
+											,buttonText: '시작기간 선택'
+										});
+										$('#datepicker2').datepicker({
+											dateFormat:'yy-mm-dd'	//날짜형식
+											,showOn: 'button'		//버튼보이기
+											,buttonImageOnly: true
+											,buttonText: '종료기간 선택'
+										});
+
+										// 달력 버튼 style, 속성 추가
+										$(".ui-datepicker-trigger").addClass("icon date");
+										$(".ui-datepicker-trigger").attr("src","resource/img/common/ico_date.png");
+
+									});
+
+								</script>
+							</div>
+						</li>
+						<li>
+							<label for="">배송지</label>	
+							<div class="cell">
+								<input type="text" name="place" id="" value="" class="inputSearchBox" style="width:375px;" title="배송지 입력">
+							</div>
+						</li>
+						<li>
+							<label for="">품목분류</label>
+							<div class="depth_select large">
+								<select name="large" title="대분류 구분">
+									<option value="">대분류 전체</option>
+									<option value="">선택</option>
+									<option value="">선택</option>
+									<option value="">선택</option>
+								</select>
+							</div>
+							<div class="depth_select middle">
+								<select name="middle" title="중분류 구분">
+									<option value="">중분류 전체</option>
+									<option value="">선택</option>
+									<option value="">선택</option>
+									<option value="">선택</option>
+								</select>
+							</div>
+							<label for="" style="width:62px;">품목명</label>										
+							<div class="cell">
+								<input type="text" name="search" id="" value="" class="inputSearchBox" style="width:181px" title="품목명 입력">
+							</div>
+						</li>
+						<li>				
+						<label for="">발주상태</label>
+						<div class="depth_select">
+							<select name="situation" title="발주상태 구분">
+								<option value="">전체</option>
+								<option value="">발주요청</option>
+								<option value="">상품확인중</option>
+								<option value="">발주확정</option>
+								<option value="">배송완료</option>
+								<option value="">발주취소</option>
+							</select>
+						</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="depth_select range">
+				<label for="">리스트 설정</label>
+				<select name="arrange" id="" class="list_cnt" title="리스트 설정 정렬">
+					<option value="">15</option>
+					<option value="">선택</option>
+					<option value="">선택</option>
+					<option value="">선택</option>
+				</select>
+			</div>
+
+			<table class="list">
+				<caption>발주내역 리스트 (표) 입니다. 이 표는 번호, 주문일자, 발주번호, 수령일자, 배송지, 품목, 품목 수, 주문금액, 발주상태, 주문복사에 대한 정보를 확인할 수 있습니다.</caption>
+				<colgroup>
+					<col style="width:5%;">
+					<col style="width:10%;">
+					<col style="width:10%;">
+					<col style="width:20%;">
+					<col style="width:8%;">
+					<col style="width:10%;">
+					<col style="width:8%;">
+					<col style="width:10%;">
+					<col style="width:9%;">
+					<col style="width:10%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">번호</th>
+						<th scope="col">주문일자</th>
+						<th scope="col">발주번호</th>
+						<th scope="col">수령일자</th>
+						<th scope="col">배송지</th>
+						<th scope="col">품목</th>
+						<th scope="col">품목 수</th>
+						<th scope="col">주문금액</th>
+						<th scope="col">발주상태</th>
+						<th scope="col">주문복사</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr onclick="" style="cursor:pointer;">
+						<td>5</td>
+						<td>2018/09/27</td>
+						<td>A180927001</td>
+						<td>0000/00/00 ~ 0000/00/00</td>
+						<td>행복ICT</td>
+						<td>당근,부추,양파, 당근,부추,양파</td>
+						<td>3개</td>
+						<td>25,800</td>
+						<td><span class="state_flag state01">발주요청</span></td>
+						<td><button class="copy">주문복사</button></td>
+					</tr>
+					<tr onclick="" style="cursor:pointer;">
+						<td>4</td>
+						<td>2018/09/27</td>
+						<td>A180927001</td>
+						<td>0000/00/00 ~ 0000/00/00</td>
+						<td>행복ICT</td>
+						<td>당근,부추,양파, 당근,부추,양파</td>
+						<td>3개</td>
+						<td>25,800</td>
+						<td><span class="state_flag state02">상품확인중</span></td>
+						<td><button class="copy">주문복사</button></td>
+					</tr>
+					<tr onclick="" style="cursor:pointer;">
+						<td>3</td>
+						<td>2018/09/27</td>
+						<td>A180927001</td>
+						<td>0000/00/00 ~ 0000/00/00</td>
+						<td>행복ICT</td>
+						<td>당근,부추,양파, 당근,부추,양파</td>
+						<td>3개</td>
+						<td>25,800</td>
+						<td><span class="state_flag state03">발주확정</span></td>
+						<td><button class="copy">주문복사</button></td>
+					</tr>
+					<tr onclick="" style="cursor:pointer;">
+						<td>2</td>
+						<td>2018/09/27</td>
+						<td>A180927001</td>
+						<td>0000/00/00 ~ 0000/00/00</td>
+						<td>행복ICT</td>
+						<td>당근,부추,양파, 당근,부추,양파</td>
+						<td>3개</td>
+						<td>25,800</td>
+						<td><span class="state_flag state04">배송완료</span></td>
+						<td><button class="copy">주문복사</button></td>
+					</tr>
+					<tr onclick="" style="cursor:pointer;">
+						<td>1</td>
+						<td>2018/09/27</td>
+						<td>A180927001</td>
+						<td>0000/00/00 ~ 0000/00/00</td>
+						<td>행복ICT</td>
+						<td>당근,부추,양파, 당근,부추,양파</td>
+						<td>3개</td>
+						<td>25,800</td>
+						<td><span class="state_flag state05">발주취소</span></td>
+						<td><button class="copy">주문복사</button></td>
+					</tr>
+
+					<!-- 게시물이 없을 경우 -->
+					<tr class="none">
+						<td colspan="10">등록된 발주내역이 없습니다.</td>
+					</tr>
+					<!-- // 게시물이 없을 경우 -->
+
+				</tbody>
+			</table>
+
+			<div class="paging">
+				<div class="inner_num">
+					<button class="btn-pageFirst" onclick=""><span class="blind">처음 페이지</span></button><button class="btn-pagePrev" onclick=""><span class="blind">이전 페이지</span></button><a href="javascript:;" class="on">1</a><a href="javascript:;">2</a><a href="javascript:;">3</a><a href="javascript:;">4</a><a href="javascript:;">5</a><a href="javascript:;">6</a><a href="javascript:;">7</a><a href="javascript:;">8</a><a href="javascript:;">9</a><button class="btn-pageNext" onclick=""><span class="blind">다음 페이지</span></button><button class="btn-pageLast" onclick=""><span class="blind">마지막 페이지</span></button>
+				</div>
+			</div>
+
+         </div>
+         <!-- // orderList -->
+
+        </div>
+        <!-- // sub_contents -->
+      </div>
+      <!-- // sub_wrap -->
+
+	  <div class="dim-menu-m"></div>
+
+      <div id="footer">
+        <div class="copyright">
+          <ul>
+            <li class="jeju_logo"><img src="resource/img/common/logo_jeju.png" alt="제주사회적경제지원센터JEJU SOCIAL ECONOMY CENTER" /></li>
+            <li>
+              상호명 : 제주사회적경제지원센터 | 대표 : 아무개 | 메일 : <a href="mailto:jeju@jeju.com">jeju@jeju.com</a> | 전화 : 064-0000-0000 | 사업자등록번호 : 000-00-0000<br />
+              주소 : 제주측별자치도 제주시 중앙로 165, 1층(이도1동) | Copyright © 2018 제주사회적경제지원센터. ALL RIGHTS RESERVED.
+            </li>
+          </ul>
+        </div>
+        <!-- // copyright -->
+      </div>
+      <!-- // footer -->
+
+    </div>
+    <!-- // wrap -->
+
+  </body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>제주로컬푸드</title>
+    <link rel="stylesheet" href="resource/css/common_jeju.css">
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/slick.js"></script><!-- 20190104 추가 -->
+    <script src="resource/js/jquery.bpopup.min.js"></script>
+    <script src="resource/js/common.js"></script>
+  </head>
+
+  <body>
+    <!-- 스킵네비게이션 -->
+    <ul id="skip-navi">
+      <li><a href="#content">본문 바로가기</a></li>
+    </ul>
+
+    <div id="wrap">
+
+      <div id="container">
+
+        <!-- GNB -->
+        <div id="header">
+          <div class="header_menu">
+            <div class="logo"><a href="#none"><img src="resource/img/common/logo.png" alt="제주로컬푸드" /></a></div>
+            <div class="util_menu">
+              <ul>
+	            <li class="btn_guide"><a href="#none" target="_self"><img src="resource/img/common/btn_guide.png" alt="상단배너" /></a></li><!-- 20190104 추가 -->
+                <li class="name"><a href="#none">제주로컬푸드</a></li>
+                <li><a href="#none">정보수정</a></li>
+                <li><a href="#none">로그아웃</a></li>
+              </ul>
+            </div>
+            <!-- // util_menu -->
+          </div>
+          <!-- // header_menu -->
+
+          <div id="gnb" class="sub_gnb">
+            <div class="gnb_wrap">
+			  <!-- 서브페이지 GNB에 id="sub_category" 추가 -->
+              <div class="gnb_category" id="sub_category">
+                <p class="sub_btn_category"><a href="#none">CATEGORY</a></p>
+                <ul class="category_depth1" style="display: none">
+                  <li>
+                    <p><a href="#none">농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">건농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">과수</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">곡류</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">가공식품</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">특산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- // gnb_category -->
+             
+			  <div class="gnb_main">
+                  <div class="gnb_menu">
+                    <ul class="gnb_depth1">
+                      <li><a href="#none">제주형 로컬푸드</a></li>
+                      <li><a href="productList.html">상품주문</a></li>
+                      <li><a href="placeList.html">발주내역</a></li>
+                      <li><a href="noticeList.html">공지사항</a></li>
+                      <li><a href="inquiryList.html">1:1 문의</a></li>
+                    </ul>
+                    <!-- // gnb_depth1 -->
+                  </div>
+                  <!-- // gnb_menu -->
+
+                  <div class="gnb_depth2" style="display: none">
+                    <div class="gnb_depth2_ul">
+                      <ul>
+                        <li><a href="#none">제주형로컬푸드 소개</a></li>
+                        <li><a href="#none">주문판매 사용방법</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="productList.html">상품목록</a></li>
+                        <li><a href="orderWrite01.html">주문서 작성</a></li>
+                        <li><a href="orderList.html">주문내역</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="placeList.html">발주내역</a></li>
+                      </ul>
+					  <ul>
+						<li><a href="noticeList.html">공지사항</a></li>
+					  </ul>
+                      <ul>
+                        <li><a href="inquiryList.html">1:1 문의</a></li>
+                      </ul>
+                    </div>
+                    <!-- // gnb_depth2_ul -->
+                  </div>
+                  <!-- // gnb_depth2 -->
+              </div>
+              <!-- // gnb_menu -->
+            </div>
+            <!-- // gnb_wrap -->
+          </div>
+          <!-- // gnb -->
+        </div>
+        <!-- // header -->
+      </div>
+      <!-- // container -->
+
+      <div id="sub_wrap">
+        <div class="lnb">
+          <ul>
+            <li class="depth_1">정보수정</li>
+            <li><a class="on" href="#none">정보수정</a></li>
+		  </ul>
+          <div class="sub_banner_lnb"><a href="#none"><img src="resource/img/main_banner_lnb.jpg" alt="상담시간" /></a></div>
+        </div>
+        <!-- // lnb -->
+        <div class="sub_contents">
+          <div class="breadcrumb">
+            <p class="depth2_title">정보수정<span>거래처 정보 수정을 할 수 있습니다.</span></p>
+            <div class="depth_select">
+              <ul>
+                <li class="icon_home">Home</li>
+                <li>
+                  <form>
+                    <select>
+                     <option value="">정보수정</option>
+                     <option value="">선택</option>
+                     <option value="">선택</option>
+                     <option value="">선택</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- // breadcrumb -->
+			
+		  <!-- 정보수정 -->
+		  <div class="modifyInfo">
+				
+				<div class="write orderwrite orderwrite02">
+					
+					<ul class="ext">
+						<li>최종 등록(수정)일 : <span class="time">2018/11/22 09:42</span></li>
+					</ul>
+
+					<div class="sec sec02">
+						<div class="top">					
+							<h2>사업자 정보</h2>
+						</div>
+						<table class="table_list type01">
+							<caption>정보수정 사업자 정보 (표) 입니다. 이 표는 사업자 명, 사업자등록번호, 아이디, 비밀번호, 비밀번호 확인, 주소, 전화번호, 팩스번호에 대한 정보를 확인할 수 있습니다.</caption>
+							<colgroup>
+								<col style="width:15%;">
+								<col style="width:35%;">
+								<col style="width:15%;">
+								<col style="width:35%;">
+							</colgroup>
+							<thead>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="col">사업자 명</th>
+									<td>행복ICT</td>
+									<th scope="col">사업자등록번호</th>
+									<td>123456</td>
+								</tr>
+								<tr>
+									<th scope="col">아이디</th>
+									<td colspan="3">happyict1</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="">비밀번호</label></th>
+									<td colspan="3">
+										<input type="password" id="" class="password w30" name="" title="비밀번호 입력">&nbsp;
+										(영문/숫자 6~12자리 혼합)
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="">비밀번호 확인</label></th>
+									<td colspan="3">
+										<input type="password" id="" class="password w30" name="" title="비밀번호 확인 입력">&nbsp;
+										(영문/숫자 6~12자리 혼합)
+									</td>
+								</tr>
+								<tr>
+									<th scope="col" rowspan="3"><label for="">주소</label><span class="star">*</span></th>
+									<td colspan="3"> <!-- 20190228 수정 -->	
+										<button type="button" onclick="">우편번호 찾기</button>
+										<input type="text" id="" class="cont_postNo w60" name="" title="우편번호 입력" value="11111">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3"><input type="text" id="" class="cont_addr1" name="" title="기본주소 입력" value="경기도"></td> <!-- 20190228 수정 -->
+								</tr>
+								<tr>
+									<td colspan="3"><input type="text" id="" class="cont_addr2" name="" title="상세주소 입력" value="11-1"></td> <!-- 20190228 수정 -->
+								</tr>
+								<tr>
+									<th scope="col"><label for="">전화번호</label><span class="star">*</span></th>
+									<td>
+										<select class="tel" id="" name="">
+											<option value="">010</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+										</select>
+										<span class="dash">-</span>
+										<input type="text" maxlength="4" id="" name="" class="tel01 w29" value="0000" title="전화번호 앞자리 입력">
+										<span class="dash">-</span>
+										<input type="text" maxlength="4" id="" name="" class="tel02 w29" value="0000" title="전화번호 뒷자리 입력">
+									</td>
+									<th scope="col"><label for="">팩스번호</label></th>
+									<td>
+										<select class="fax" id="" name="">
+											<option value="">02</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+										</select>
+										<span class="dash">-</span>
+										<input type="text" maxlength="4" id="" name="" class="fax01 w29" value="000" title="팩스번호 앞자리 입력">
+										<span class="dash">-</span>
+										<input type="text" maxlength="4" id="" name="" class="fax02 w29" value="0000" title="팩스번호 뒷자리 입력">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="sec sec02">
+						<div class="top">					
+							<h2>담당자 정보</h2>
+						</div>
+						<table class="table_list type01">
+							<caption>정보수정 담당자 정보 (표) 입니다. 이 표는 담당자 이름, 담당자 직급, 소속, 휴대전화번호, 이메일에 정보를 확인할 수 있습니다.</caption>
+							<colgroup>
+								<col style="width:15%;">
+								<col style="width:35%;">
+								<col style="width:15%;">
+								<col style="width:35%;">
+							</colgroup>
+							<thead>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="col"><label for="">담당자 이름</label><span class="star">*</span></th>
+									<td colspan="3">
+										<input type="text" id="" class="w30" name="" title="담당자 이름 입력" value="김종현">
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="">담당자 직급</label><span class="star">*</span></th>
+									<td>
+										<input type="text" id="" class="w75" name="" title="담당자 직급 입력" value="과장">
+									</td>
+									<th scope="col"><label for="">소속</label><span class="star">*</span></th>
+									<td>
+										<input type="text" id="" class="w75" name="" title="소속 입력" value="CSV 사업본부">
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="">휴대전화번호</label><span class="star">*</span></th>
+									<td>
+										<select class="tel" id="" name="">
+											<option value="">010</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+										</select>
+										<span class="dash">-</span>
+										<input type="text" maxlength="4" id="" name="" class="tel01 w29" value="0000" title="휴대전화번호 앞자리 입력">
+										<span class="dash">-</span>
+										<input type="text" maxlength="4" id="" name="" class="tel02 w29" value="0000" title="휴대전화번호 뒷자리 입력">
+									</td>
+									<th scope="col"><label for="">이메일</label></th>
+									<td>
+										<input type="text" id="" name="" class="w27" value="" title="이메일 아이디 입력">
+										<span class="dash">@</span>
+										<input type="text" id="" name="" class="w27" value="" title="이메일 도메인 입력">
+										<select class="" id="" name="">
+											<option value="">직접입력</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="sec sec02">
+						
+						<div class="top">					
+							<h2>배송지 정보</h2>
+							<div class="btn_both">
+								<button type="button" title="배송지 추가" onclick="">배송지 추가</button>
+							</div>
+						</div>
+						
+						<table class="list">
+							<caption>정보수정 배송지 정보 (표) 입니다. 이 표는 배송지명, 주소, 기본 배송지, 삭제에 대한 정보를 확인할 수 있습니다.</caption>
+							<colgroup>
+								<col style="width:15%;">
+								<col style="width:10%;">
+								<col style="width:55%;">
+								<col style="width:10%;">
+								<col style="width:10%;">
+							</colgroup>
+							<thead>					
+								<tr>
+									<th scope="col">배송지명</th>
+									<th scope="col" colspan="2">주소</th>
+									<th scope="col">기본 배송지</th>
+									<th scope="col">삭제</th>
+								</tr>	
+							</thead>
+							<tbody>					
+								
+								<tr>
+									<td class="delivery_name" scope="row" rowspan="5"><input type="text" id="" class="delivery_name" name="" title="배송지명 입력" value="행복ICT"></td>
+									<th scope="col">받으시는 분</th>
+									<td scope="row"><input type="text" id="" class="w50" name="" title="받으시는 분 입력" value="김종현"></td>
+									<td scope="row" rowspan="5">
+										<div class="item">
+											<input type="radio" id="" name="" class="radio">
+											<label for="" class="label t_radio t_2"></label>
+										</div>
+									</td>
+									<td scope="row" rowspan="5">
+										<a href="javascript:"><img src="resource/img/common/btn_delete.png" alt="" /></a>
+									</td>
+								</tr>						
+								<tr>
+									<th scope="col">연락처</th>
+									<td scope="row">
+										<select class="tel" id="" name="">
+											<option value="">010</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+											<option value="">선택</option>
+										</select>
+										<span class="dash">-</span>
+										<input type="text" maxlength="4" id="" name="" class="tel01 w20" value="0000" title="연락처 앞자리 입력">
+										<span class="dash">-</span>
+										<input type="text" maxlength="4" id="" name="" class="tel02 w20" value="0000" title="연락처 뒷자리 입력">
+									</td>
+								</tr>						
+								<tr>
+									<th scope="col" rowspan="3">주소</th>
+									<td scope="row">	
+										<button type="button" onclick="">우편번호 찾기</button>
+										<input type="text" id="" class="cont_postNo w30" name="" title="우편번호 입력" value="11111">
+									</td>
+								</tr>
+								<tr>
+									<td scope="row"><input type="text" id="" class="cont_addr1 w80" name="" title="기본주소 입력" value="경기도"></td>
+								</tr>
+								<tr>
+									<td scope="row"><input type="text" id="" class="cont_addr2 w80" name="" title="상세주소 입력" value="11-1"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					
+					</div>
+
+					<div class="btn_both">
+						<button type="button" class="orange" onclick="">저장</button>
+						<button type="button" onclick="">취소</button>
+					</div>
+
+			 </div>
+			 <!-- // orderView -->
+
+		  </div>
+		  <!-- // 정보수정 -->
+
+        </div>
+        <!-- // sub_contents -->
+      </div>
+      <!-- // sub_wrap -->
+
+	  <div class="dim-menu-m"></div>
+
+      <div id="footer">
+        <div class="copyright">
+          <ul>
+            <li class="jeju_logo"><img src="resource/img/common/logo_jeju.png" alt="제주사회적경제지원센터JEJU SOCIAL ECONOMY CENTER" /></li>
+            <li>
+              상호명 : 제주사회적경제지원센터 | 대표 : 아무개 | 메일 : <a href="mailto:jeju@jeju.com">jeju@jeju.com</a> | 전화 : 064-0000-0000 | 사업자등록번호 : 000-00-0000<br />
+              주소 : 제주측별자치도 제주시 중앙로 165, 1층(이도1동) | Copyright © 2018 제주사회적경제지원센터. ALL RIGHTS RESERVED.
+            </li>
+          </ul>
+        </div>
+        <!-- // copyright -->
+      </div>
+      <!-- // footer -->
+
+    </div>
+    <!-- // wrap -->
+
+  </body>
+</html>

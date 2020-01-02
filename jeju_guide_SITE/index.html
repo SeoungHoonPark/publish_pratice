@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>제주로컬푸드</title>
+<style type="text/css">
+
+* {margin:0; padding:0; font-family:"Malgun Gothic", "맑은 고딕", "돋움", "dotum"; font-size:12px; line-height:14px; color:#666;}
+body {padding:15px;}
+a {text-decoration:none;}
+a:hover {color:#ff0000;}
+
+h1 {font-size:25px;	color:#000;	font-weight:bold; text-align:left; padding:20px 0 0 0;}
+h2 {font-size:14px;	color:#000;	font-weight:bold; text-align:left; padding:50px 0 0 0;}
+
+table {border-collapse:collapse; margin:20px 0; width:100%; border-bottom:1px solid #ccc;}
+table caption {display:none;}
+table th {background-color:#f0f0f0;	border:1px solid #ccc; border-bottom:double #ccc; padding:5px;}
+table td {border:1px solid #ccc; padding:5px 5px 5px 10px;}
+table td.date {text-align:center; font-family:"verdana"; font-size:11px;}
+table td.date strong {font-size:11px;}
+table td.date span {font-family:"verdana"; font-size:11px;}
+table td.note strong {color:#ff0000;}
+table td.note p + p {margin-top: 10px;}
+
+em {font-family:"verdana"; font-style:normal; color:#ff0000; font-size:11px;}
+em.today {font-family:"verdana"; font-style:normal; font-weight:bold; color:#ff0000; font-size:11px;}
+
+span {font-style:normal; color:#ff0000;}
+
+table td.date span, table td.date span em {display:block; margin-top:3px;}
+table td.note {text-align:left;}
+
+.gab {height:5px; padding:0}
+.cg {color:#ff0000;}
+.nop {color:green;}
+
+</style>
+</head>
+<body>
+<h1>[제주로컬푸드]</h1>
+
+<h2>* Front Coding List *</h2>
+<table border="0" cellspacing="0" cellpadding="0" summary="Front Coding List">
+  <caption>
+    Front Coding List
+  </caption>
+  <colgroup>
+  <col width="12%" />
+  <col width="12%" />
+  <col width="12%" />
+  <col width="20%" />
+  <col width="8%" />
+  <col width="*" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">1depth</th>
+      <th scope="col">2depth</th>
+      <th scope="col">3depth</th>
+      <th scope="col">Html File</th>
+      <th scope="col">Date</th>
+      <th scope="col">Note</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+    <td align="center"><strong>메인</strong></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="main.html" target="_blank">main.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181204 - 추천상품 리스트 부분 태그 구조 변경.(이미지 비율대로 조정.)</li>
+			<li style="list-style:none; font-weight:700; color:red;">20181205 - 레이어 팝업 css 및 class, id값 조정.</li>
+		</ul>
+	</td>
+  </tr>
+
+  <tr>
+    <td align="center"><strong>서브 레이아웃</strong></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="sub.html" target="_blank">sub.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td align="center"><strong>로그인</strong></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="login.html" target="_blank">login.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td rowspan="6" align="center"><strong>상품주문</strong></td>
+    <td>상품목록</td>
+    <td>리스트</td>
+    <td class="file"><a href="productList.html" target="_blank">productList.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181205 - 레이어 팝업 css 및 class, id값 조정.</li>
+		</ul>
+	</td>
+  </tr>
+
+  <tr>
+    <td rowspan="3">주문서 작성</td>
+    <td>주문입력</td>
+    <td class="file"><a href="orderWrite01.html" target="_blank">orderWrite01.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181204 - 주문입력 th 선택 라디오버튼 추가.</li>
+		</ul>
+	</td>
+  </tr>
+
+  <tr>
+    <td>배송지 입력</td>
+    <td class="file"><a href="orderWrite02.html" target="_blank">orderWrite02.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181204 - 배송지 입력  배송지 주소록 팝업 추가.</li>
+			<li style="list-style:none; font-weight:700; color:red;">20181205 - 레이어 팝업 css 및 class, id값 조정.</li>
+		</ul>
+	</td>
+  </tr>
+
+  <tr>
+    <td>주문서 작성 완료</td>
+    <td class="file"><a href="orderWrite03.html" target="_blank">orderWrite03.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">&nbsp;</td>
+  </tr>
+
+   <tr>
+    <td rowspan="2">주문내역</td>
+    <td>리스트</td>
+    <td class="file"><a href="orderList.html" target="_blank">orderList.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181204 - 주문내역 리스트 tr 태그에 링크 추가.</li>
+			<li style="list-style:none; font-weight:700; color:red;">20181205 - a 태그 커서 반영.</li>
+		</ul>
+	</td>
+  </tr>
+
+  <tr>
+    <td>상세</td>
+    <td class="file"><a href="orderView.html" target="_blank">orderView.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181204 - 주문내역 상세 주문서보기 팝업 추가.</li>
+			<li style="list-style:none; font-weight:700; color:red;">20181205 - 레이어 팝업 css 및 class값 조정, 닫힘 태그 수정.</li>
+		</ul>
+	</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2" align="center"><strong>공지사항</strong></td>
+    <td>리스트</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="noticeList.html" target="_blank">noticeList.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">&nbsp;</td>
+  </tr>
+
+   <tr>
+    <td>상세</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="noticeView.html" target="_blank">noticeView.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">&nbsp;</td>
+  </tr>
+  
+  
+  <tr>
+    <td rowspan="3" align="center"><strong>발주내역</strong></td>
+    <td>리스트</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="placeList.html" target="_blank">placeList.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181205 - 발주내역 리스트 추가</li>
+		</ul>
+	</td>
+  </tr>
+
+   <tr>
+    <td>상세</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="placeView.html" target="_blank">placeView.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181205 - 발주내역 상세 추가.</li>
+		</ul>
+	</td>
+  </tr>
+
+   <tr>
+    <td>일자별 품목/농가 구매확정</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="placeView01.html" target="_blank">placeView01.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+	</td>
+  </tr>
+
+   <tr>
+    <td rowspan="3" align="center"><strong>1:1 문의</strong></td>
+    <td>리스트</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="inquiryList.html" target="_blank">inquiryList.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181204 - 1:1문의 리스트 작성일 -> 문의일로 수정.</li>
+		</ul>
+	</td>
+  </tr>
+
+   <tr>
+    <td>상세</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="inquiryView.html" target="_blank">inquiryView.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181204 - 1:1문의 상세 화면 UI 조정.</li>
+		</ul>
+	</td>
+  </tr>
+
+   <tr>
+    <td>등록/수정</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="inquiryWrite.html" target="_blank">inquiryWrite.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2" align="center"><strong>정보수정</strong></td>
+    <td>비밀번호확인</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="chkPass.html" target="_blank">chkPass.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181211 - 추가 페이지.</li>
+		</ul>
+	</td>
+  </tr>
+
+   <tr>
+    <td>정보수정 페이지</td>
+    <td>&nbsp;</td>
+    <td class="file"><a href="modifyInfo.html" target="_blank">modifyInfo.html</a></td>
+    <td class="date">&nbsp;</td>
+    <td class="note">
+		<ul>
+			<li style="list-style:none; font-weight:700; color:red;">20181211 - 추가 페이지.</li>
+		</ul>
+	</td>
+  </tr>
+  
+ </tbody>
+</table>
+</body>
+</html>

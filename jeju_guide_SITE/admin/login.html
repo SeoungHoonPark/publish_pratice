@@ -1,0 +1,239 @@
+<base href="https://lfs2.happyict.co.kr">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>제주로컬푸드</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![if !IE]>
+  		<link rel="icon" href="/jeju/resource/common/img/favicon/jeju.ico" />
+	<![endif]>
+	<!-- This is needed for IE -->
+  	<link rel="shortcut icon" href="/jeju/resource/common/img/favicon/jeju.ico" />
+</head>
+
+<body>
+<form name="hidden">
+	<input type="hidden" name="path"/>
+</form>
+
+<!-- bootstrap -->
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+
+<!-- css -->
+<!-- 2-1 common -->
+<link rel="stylesheet" type="text/css" media="screen" href="/jeju/resource/common/css/ui.jqgrid.css" /> <!-- jqgrid style -->
+<link type="text/css" rel="stylesheet" href="/jeju/resource/common/css/common.add.css" />
+<link type="text/css" rel="stylesheet" href="/jeju/resource/common/css/jquery-ui.min.css" />
+
+<!-- 2-2 biz -->
+<link type="text/css" rel="stylesheet" href="/jeju/resource/biz/css/admin_jeju.css" />
+
+<script type="text/javascript" src="/jeju/include/validator.jsp"></script>
+
+<script type="text/javascript" src="/jeju/resource/common/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/common/js/jquery-ui.min.js"></script>
+<script type="text/javaScript" src="/jeju/resource/common/js/sha256.js"></script>
+<script type="text/javaScript" src="/jeju/resource/common/js/jquery.ui.datepicker-ko.js"></script>
+<script type="text/javaScript" src="/jeju/resource/common/js/jquery.form.min.js"></script>
+<script type="text/javaScript" src="/jeju/resource/common/js/common.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/common_biz.js"></script> <!--  layer popup -->
+<script type="text/javaScript" src="/jeju/resource/common/js/jquery.tmpl.min.js"></script>
+
+<!-- bootstrap -->
+<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+<script type="text/javaScript" src="/jeju/resource/biz/js/common.js"></script>
+<script type="text/javaScript" src="/jeju/resource/biz/js/dtree.js"></script>
+<script type="text/javaScript" src="/jeju/resource/biz/js/ui.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/grid.locale-en.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/formVal.js"></script>
+<script type="text/javaScript" src="/jeju/resource/biz/js/jquery.tablednd_0.5.js"></script>
+<script type="text/javaScript" src="/jeju/resource/biz/js/jquery.nyroModal.custom.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/plugins/jqplot.barRenderer.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/plugins/jqplot.pointLabels.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/biz/js/jqplot/excanvas.min.js"></script>
+
+<!-- cookie -->
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<script type="text/javascript" src="/jeju/resource/common/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/jeju/resource/common/js/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+var uid='';
+
+$(document).ready(function() {
+	var status = '';
+	// alert(status);
+	
+	if (status != null && status == '1')
+		alert("아이디 또는 비밀번호가 일치하지 않습니다.");
+});
+
+$("#password").keyup(function(event){
+	if(event.keyCode == 13){
+		// alert(1111);
+	}
+});
+
+function fncLogin(inputVal){
+	var pass = $('input[name=pass]').val();
+	var id  = $('input[name=mngrId]').val();
+
+	if(id == null || id =="") {
+		alert("아이디를 입력하세요.");
+		return false;
+	}
+	
+	if(pass == null || pass ==""){
+		alert("비밀번호를 입력하세요.");
+		return false;
+	}
+	var value = pass;
+	value = Base64.encode(hex_sha256(pass));
+	
+	$('input[name=passWord]').val(value);
+	$('form[name=login]').attr('action', '/jeju/biz/actionLogin.do').submit();
+}
+</script>
+
+<body style="background: none;">
+
+<div class="loginbox">
+	<form name="login" method="post">
+	<input type='hidden' name='passWord'/>
+
+	<div class="loginsection">
+		<div class="logo"></div>
+		<p class="desc_logo">관리자 페이지</p>
+		<ul>
+			<li class="input_txt"><input name="mngrId"  type="text" class="cleardefault" value="" placeholder="ID" /></li>
+			<li class="input_txt"><input name="pass" type="password" class="cleardefault" value="" onKeyPress="if(event.keyCode==13) { fncLogin(); return; }" placeholder="PASSWORD" /></li>
+		</ul>
+		<p class="login_txt03"><input type="checkbox" name="remember" id="rememberid" value="checked" /> <label for="rememberid">아이디 저장</label></p>
+		<p class="login_txt04"><a onclick="fncLogin();" href="#" class="btn_login">LOGIN</a></p>
+		<p class="copy">Copyright ⓒ 제주로컬푸드. All rights reserved.</p>
+		<!-- 20190920 추가 -->
+		<ol class="footer">
+          <li><img src="http://10.10.10.199:81/local_food/jeju/resource/img/common/footer_site01.png" alt="산업통상자원부"></li>
+          <li><img src="http://10.10.10.199:81/local_food/jeju/resource/img/common/footer_site02.png" alt="한국산업기술진흥원"></li>
+          <li><img src="http://10.10.10.199:81/local_food/jeju/resource/img/common/footer_site03.png" alt="제주특별자치도"></li>
+        </ol>
+		<!-- // 20190920 추가 -->
+	</div>
+
+	</form>
+</div>
+
+<!-- 
+<div class="container">
+	<form class="form-signin" name="login" method="post">
+	<h2 class="form-signin-heading">로그인</h2>
+	<h2 class="form-signin-heading">test/1234 , test1234/1234</h2>
+	<input type='hidden' name='passWord'/>
+	<input type="text" name="mngrId" class="input-block-level" placeholder="test">
+	<input type="password" name="pass" class="input-block-level" placeholder="1234">
+	<label class="checkbox">
+		<input type="checkbox" value="remember-me"> 아이디기억
+	</label>
+	<button class="btn btn-large btn-primary" type="submit" onclick="fncLogin();">로그인</button>
+	</form>
+</div> -->
+
+</body>
+</html>
+
+<script langauge="javascript">
+/* 
+ * Cross-browser event handling, by Scott Andrew
+ */
+function addEvent(element, eventType, lamdaFunction, useCapture) {
+	if (element.addEventListener) {
+		element.addEventListener(eventType, lamdaFunction, useCapture);
+		return true;
+	} else if (element.attachEvent) {
+		var r = element.attachEvent('on' + eventType, lamdaFunction);
+		return r;
+	} else {
+		return false;
+	}
+}
+
+addEvent(window, 'load', init, false);
+
+function init() {
+	var formInputs = document.getElementsByTagName('input');
+	for (var i = 0; i < formInputs.length; i++) {
+		var theInput = formInputs[i];
+		
+		if (theInput.type == 'text' && theInput.className.match(/\bcleardefault\b/)) {
+			/* Add event handlers */
+			addEvent(theInput, 'focus', clearDefaultText, false);
+			addEvent(theInput, 'blur', replaceDefaultText, false);
+			/* Save the current value */
+			if (theInput.value != '') {
+				theInput.defaultText = theInput.value;
+			}
+		}
+		
+		if (theInput.type == 'password' && theInput.className.match(/\bcleardefault\b/)) {
+			/* Add event handlers */
+			addEvent(theInput, 'focus', clearDefaultText, false);
+			addEvent(theInput, 'blur', replaceDefaultText, false);
+			/* Save the current value */
+			if (theInput.value != '') {
+				theInput.defaultText = theInput.value;
+			}
+		}
+	}
+
+	// ID저장
+	if(uid != '') {
+		$('input[name=mngrId]').val(uid);
+		$('input[name=remember]').attr("checked","checked");
+	}
+}
+
+function clearDefaultText(e) {
+	var target = window.event ? window.event.srcElement : e ? e.target : null;
+	if (!target) return;
+	
+	if (target.value == target.defaultText) {
+		target.value = '';
+	}
+}
+
+function replaceDefaultText(e) {
+	var target = window.event ? window.event.srcElement : e ? e.target : null;
+	if (!target) return;
+	
+	if (target.value == '' && target.defaultText) {
+		target.value = target.defaultText;
+	}
+}
+</script>
+	
+
+
+</body>
+
+
+
+
+</html>

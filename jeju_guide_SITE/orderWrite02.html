@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>제주로컬푸드</title>
+    <link rel="stylesheet" href="resource/css/common_jeju.css">
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/slick.js"></script><!-- 20190104 추가 -->
+    <script src="resource/js/jquery.bpopup.min.js"></script>
+    <script src="resource/js/common.js"></script>
+  </head>
+
+  <body>
+    <!-- 스킵네비게이션 -->
+    <ul id="skip-navi">
+      <li><a href="#content">본문 바로가기</a></li>
+    </ul>
+
+    <div id="wrap">
+
+      <div id="container">
+
+        <!-- GNB -->
+        <div id="header">
+          <div class="header_menu">
+            <div class="logo"><a href="#none"><img src="resource/img/common/logo.png" alt="제주로컬푸드" /></a></div>
+            <div class="util_menu">
+              <ul>
+	            <li class="btn_guide"><a href="#none" target="_self"><img src="resource/img/common/btn_guide.png" alt="상단배너" /></a></li><!-- 20190104 추가 -->
+                <li class="name"><a href="#none">제주로컬푸드</a></li>
+                <li><a href="#none">정보수정</a></li>
+                <li><a href="#none">로그아웃</a></li>
+              </ul>
+            </div>
+            <!-- // util_menu -->
+          </div>
+          <!-- // header_menu -->
+
+          <div id="gnb" class="sub_gnb">
+            <div class="gnb_wrap">
+			  <!-- 서브페이지 GNB에 id="sub_category" 추가 -->
+              <div class="gnb_category" id="sub_category">
+                <p class="sub_btn_category"><a href="#none">CATEGORY</a></p>
+                <ul class="category_depth1" style="display: none">
+                  <li>
+                    <p><a href="#none">농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">건농산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">과수</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">곡류</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">가공식품</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><a href="#none">특산물</a></p>
+                    <ul class="category_depth2">
+                      <li><a href="#none">엽채류</a></li>
+                      <li><a href="#none">과채류</a></li>
+                      <li><a href="#none">구근류</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- // gnb_category -->
+             
+			  <div class="gnb_main">
+                  <div class="gnb_menu">
+                    <ul class="gnb_depth1">
+                      <li><a href="#none">제주형 로컬푸드</a></li>
+                      <li><a href="productList.html">상품주문</a></li>
+                      <li><a href="placeList.html">발주내역</a></li>
+                      <li><a href="noticeList.html">공지사항</a></li>
+                      <li><a href="inquiryList.html">1:1 문의</a></li>
+                    </ul>
+                    <!-- // gnb_depth1 -->
+                  </div>
+                  <!-- // gnb_menu -->
+
+                  <div class="gnb_depth2" style="display: none">
+                    <div class="gnb_depth2_ul">
+                      <ul>
+                        <li><a href="#none">제주형로컬푸드 소개</a></li>
+                        <li><a href="#none">주문판매 사용방법</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="productList.html">상품목록</a></li>
+                        <li><a href="orderWrite01.html">주문서 작성</a></li>
+                        <li><a href="orderList.html">주문내역</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="placeList.html">발주내역</a></li>
+                      </ul>
+					  <ul>
+						<li><a href="noticeList.html">공지사항</a></li>
+					  </ul>
+                      <ul>
+                        <li><a href="inquiryList.html">1:1 문의</a></li>
+                      </ul>
+                    </div>
+                    <!-- // gnb_depth2_ul -->
+                  </div>
+                  <!-- // gnb_depth2 -->
+              </div>
+              <!-- // gnb_menu -->
+            </div>
+            <!-- // gnb_wrap -->
+          </div>
+          <!-- // gnb -->
+        </div>
+        <!-- // header -->
+      </div>
+      <!-- // container -->
+
+      <div id="sub_wrap">
+        <div class="lnb">
+          <ul>
+            <li class="depth_1">상품주문</li>
+            <li><a href="#none">상품목록</a></li>
+            <li><a class="on" href="#none">주문서 작성</a></li>
+            <li><a href="#none">주문내역</a></li>
+          </ul>
+          <div class="sub_banner_lnb"><a href="#none"><img src="resource/img/main_banner_lnb.jpg" alt="상담시간" /></a></div>
+        </div>
+        <!-- // lnb -->
+        <div class="sub_contents">
+          <div class="breadcrumb">
+            <p class="depth2_title">주문서 작성<span>주문 입력입니다. 기간별 품목을 선택하고, 배송지 입력을 진행합니다.</span></p>
+            <div class="depth_select">
+              <ul>
+                <li class="icon_home">Home</li>
+                <li>
+                  <form>
+                    <select>
+                     <option value="">상품주문</option>
+                     <option value="">선택</option>
+                     <option value="">선택</option>
+                     <option value="">선택</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- // breadcrumb -->
+
+		  <div class="write orderwrite orderwrite02">
+
+			<ul class="ext">
+				<li>품목추가 하기를 클릭하면 카테고리별 품목을 추가 할 수 있습니다.</li>
+				<li>발주처리 완료기한이 지난 항목은 자동 삭제됩니다.</li>
+			</ul>
+			
+			<div class="state">
+				<img src="resource/img/common/orderwrite02.png" alt="주문입력, 배송지 입력, 주문서 작성완료">
+			</div>
+
+			<div class="sec sec02">
+				<div class="top">					
+					<h2>배송지 입력</h2>
+				</div>
+				<table class="table_list type01">
+					<caption>배송지 입력 (표) 입니다. 이 표는 배송지, 받으시는 분, 휴대전화번호에 대한 정보를 확인할 수 있습니다.</caption>
+					<colgroup>
+						<col style="width:23%;">
+						<col style="width:77%;">
+					</colgroup>
+					<thead>
+					</thead>
+					<tbody>
+						<!-- 20181220 수정 -->
+						<tr>
+							<th scope="col" rowspan="5"><label for="">배송지</label><span class="star">*</span></th>
+							<td>	
+								<div class="item">
+									<input type="radio" id="new" name="delivery_position" class="radio" checked>
+									<label for="new" class="label t_radio t_2">새로운 배송지</label>
+									<input type="radio" id="regist" name="delivery_position" class="radio">
+									<label for="regist" class="label t_radio">등록 배송지</label>
+								</div>
+								<button type="button" onclick="layer_open();">주소록보기</button>
+							</td>
+						</tr>
+						<!-- // 20181220 수정 -->
+						
+						<!-- 20181220 추가 -->
+						<script type="text/javascript">
+						$(document).ready(function () {
+							$('input:radio[name="delivery_position"]').change(function(){
+								if($('#new').is(":checked") == true){
+									$("td.postNo span").css("display","none");
+								}else if($('#regist').is(":checked") == true){
+									$("td.postNo span").css("display","block");
+								}
+							});
+						});
+						</script>
+						<!-- // 20181220 추가 -->
+
+						<tr>
+							<td><input type="text" id="" class="cont_position" name="" title="배송지 입력"></td>
+						</tr>
+						
+						<!-- 20181220 수정 -->
+						<tr>
+							<td class="postNo">	
+								<button type="button" onclick="">우편번호 찾기</button>
+								<input type="text" id="" class="cont_postNo" name="" title="우편번호 입력">
+								<span class="wrap-check">				
+									<input type="checkbox" id="1" class="checkbox" name="postNo">
+									<label for="1" class="label t_check02">아이디 저장</label>
+								</span>
+							</td>
+						</tr>
+						<!-- 20181220 수정 -->
+					
+						<tr>
+							<td><input type="text" id="" class="cont_position" name="" title="배송지 입력"></td>
+						</tr>
+						<tr>
+							<td><input type="text" id="" class="cont_position" name="" title="배송지 입력"></td>
+						</tr>
+						<tr>
+							<th scope="col"><label for="">받으시는 분</label><span class="star">*</span></th>
+							<td><input type="text" id="" class="receive" name="" title="받으시는 분 입력"></td>
+						</tr>
+						<tr>
+							<th scope="col"><label for="">휴대전화번호</label><span class="star">*</span></th>
+							<td>
+								<select class="phone" id="" name="">
+									<option value="">010</option>
+									<option value="">선택</option>
+									<option value="">선택</option>
+									<option value="">선택</option>
+								</select>
+								<span class="dash">-</span>
+								<input type="text" maxlength="4" id="" name="" class="cont_phone" value="">
+								<span class="dash">-</span>
+								<input type="text" maxlength="4" id="" name="" class="cont_phone" value="">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="btn_both">
+				<button type="button" onclick="">주문입력 수정</button>
+				<button type="button" onclick="">배송지 입력완료</button>
+			</div>
+
+			 <!-- ======레이어팝업(배송지 주소록)====== -->
+			<div id="layer_popup" class="layer_popup addrPop" style="display: none;">
+			  
+			  <div class="popupContent">
+				
+				<div class="title_wrap">
+				  <p class="title">배송지 주소록</p>
+				  <p class="b-close">닫&nbsp;&nbsp;기</p>
+				</div>
+				
+				<div class="popup_form">
+
+				  <!-- 배송지 주소록 -->
+				  <table class="form_table" style="width:100%;">
+					<caption>배송지 주소록(표) 입니다. 이 표는 배송지명, 주소, 기본 배송지에 대한 정보를 선택할 수 있습니다.</caption>
+					<colgroup>
+					  <col width="30%" />
+					  <col width="50%" />
+					  <col width="20%" />
+					</colgroup>
+					<thead>
+					  <tr>
+						<th scope="col">배송지명</th>
+						<th scope="col">주소</th>
+						<th scope="col">기본 배송지</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>행복ICT</td>
+						<td>
+							<span class="name">김종현</span><br />
+							<span class="phone">010-3968-4979</span><br />
+							<span class="addr">(04782) 서울특별시 성동구 성수일로6길 33 아연디지털타워</span>
+						</td>
+						<td>
+							<div class="item">
+								<input type="radio" id="1" name="a" class="radio">
+								<label for="1" class="label t_radio t_2"></label>
+							</div>
+						</td>
+					  </tr>
+					  <tr>
+						<td>행복ICT</td>
+						<td>
+							<span class="name">김종현</span><br />
+							<span class="phone">010-3968-4979</span><br />
+							<span class="addr">(04782) 서울특별시 성동구 성수일로6길 33 아연디지털타워</span>
+						</td>
+						<td>
+							<div class="item">
+								<input type="radio" id="2" name="a" class="radio">
+								<label for="2" class="label t_radio t_2"></label>
+							</div>
+						</td>
+					  </tr>
+					</tbody>
+				  </table>
+				  <!-- //배송지 주소록 -->
+
+				</div>
+			  </div>
+			  <!-- // popupContent -->
+			  
+			  <div class="btn_order_ul">
+				<ul>
+				  <li class="btn_order"><button>확&nbsp;&nbsp;인</button></li>
+				</ul>
+			  </div>
+			  <!-- // btn_order_ul -->
+			</div>
+			<!-- // layer_popup -->
+			<!-- ======레이어팝업(배송지 주소록)====== -->
+
+         </div>
+         <!-- // orderView -->
+
+        </div>
+        <!-- // sub_contents -->
+      </div>
+      <!-- // sub_wrap -->
+
+	  <div class="dim-menu-m"></div>
+
+      <div id="footer">
+        <div class="copyright">
+          <ul>
+            <li class="jeju_logo"><img src="resource/img/common/logo_jeju.png" alt="제주사회적경제지원센터 JEJU SOCIAL ECONOMY CENTER" /></li>
+            <li>
+              상호명 : 제주사회적경제지원센터 | 대표 : 아무개 | 메일 : <a href="mailto:jeju@jeju.com">jeju@jeju.com</a> | 전화 : 064-0000-0000 | 사업자등록번호 : 000-00-0000<br />
+              주소 : 제주측별자치도 제주시 중앙로 165, 1층(이도1동) | Copyright © 2018 제주사회적경제지원센터. ALL RIGHTS RESERVED.
+            </li>
+          </ul>
+        </div>
+        <!-- // copyright -->
+      </div>
+      <!-- // footer -->
+
+    </div>
+    <!-- // wrap -->
+
+  </body>
+</html>
